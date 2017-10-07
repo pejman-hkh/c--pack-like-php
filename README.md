@@ -36,19 +36,19 @@ std::string pack( const T& data ) {
 # Usage : 
 
 ```c++
-	bindData data;
-	data.len = 57; 
-	data.command = 0x65;
-	data.status = 0;
-	data.snd_fb = 0xffffffff;
-	data.rcv_fb = 0xffffffff;
-	memcpy( &data.account, "...\0", 6 );
-	memcpy( &data.pass, "...\0", 8 );
-	memcpy( &data.sys_type, "", 0 );
-	data.version = 0x10;
+bindData data;
+data.len = 57; 
+data.command = 0x65;
+data.status = 0;
+data.snd_fb = 0xffffffff;
+data.rcv_fb = 0xffffffff;
+memcpy( &data.account, "...\0", 6 );
+memcpy( &data.pass, "...\0", 8 );
+memcpy( &data.sys_type, "", 0 );
+data.version = 0x10;
 
-	std::string buffer = pack<bindData>( data );
-	int msize = sizeof( data );
-	std::cout <<  msize << std::endl;
-	std::cout <<  buffer << std::endl;
+std::string buffer = pack<bindData>( data );
+int msize = sizeof( data );
+std::cout <<  msize << std::endl;
+std::cout <<  buffer << std::endl;
 ```

@@ -1,4 +1,4 @@
-# c--pack-like-php
+# c++-pack-like-php
 C++ pack like php
 ```c++
 #pragma pack(1)

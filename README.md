@@ -16,9 +16,6 @@ struct bindData
 };
 #pragma pack(0)
 
-
-using boost::asio::ip::tcp;
-
 template <typename T>
 std::string pack( const T& data ) {
 	char toStr[sizeof(data)];

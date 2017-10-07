@@ -1,6 +1,6 @@
 # c--pack-like-php
 C++ pack like php
-```
+```c++
 #pragma pack(1)
 struct bindData
 {
@@ -35,7 +35,7 @@ std::string pack( const T& data ) {
 
 # Usage : 
 
-```
+```c++
 	bindData data;
 	data.len = 57; 
 	data.command = 0x65;
